@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Code Engine</title>
+		<style>
+			{% include 'style.css' %}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Search For your Favourite Problems :)</h1>
+			<div class="form">
+				<form method="POST">
+					{{ form.hidden_tag() }} {{ form.search.label }} {{
+					form.search(class='search-bar') }} {{
+					form.submit(class='search-button') }}
+				</form>
+			</div>
+			<div class="results">
+				{% for result in results %}{% if loop.index == 1 %}
+				<h2>Top Results</h2>
+				{% endif %}
+				<a href="{{ result }}" target="_blank" class="result-box">
+					{{ result.split("problems")[-1].replace("/","") }}
+				</a>
+				{% endfor %}
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Search Page</title>
+		<!-- <link rel="stylesheet" href="style.css" /> -->
+	</head>
+	<body>
+		<div class="form">
+			<form method="POST">
+				{{ form.hidden_tag() }} {{ form.search.label }} {{ form.search() }} {{
+				form.submit() }}
+			</form>
+		</div>
+		<div>
+			{% for result in results %}
+			<a href="{{ result }}">{{ result }}</a>
+			<br />
+			{% endfor %}
+		</div>
+	</body>
+</html>

@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap");
+
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: "Roboto", sans-serif;
+}
+
+body {
+	background-image: url("https://mazwai.com/videvo_files/video/free/2016-12/thumbnails/Hack_code_greenonblack_01_Videvo_small.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: #8879ad;
+}
+
+label {
+	font-size: 20px;
+	font-weight: bold;
+	font-family: "Roboto Slab", serif;
+	color: #70aee4;
+}
+.results h2 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #e7b1ef;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 25px;
+	padding: 8px;
+	color: #cffaff;
+}
+
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+}
+
+.search-bar {
+	display: inline-block;
+	width: 70%;
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #121010;
+	border-radius: 10px;
+	box-sizing: border-box;
+	margin-top: 35px;
+	font-style: italic;
+}
+
+.search-button {
+	display: inline-block;
+	width: 25%;
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	border-radius: 4px;
+	background-color: #4caf50;
+	color: white;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.search-button:hover {
+	background-color: #45a049;
+}
+
+.results {
+	margin-top: 20px;
+}
+
+.result-box {
+	display: block;
+	background-color: #7bc6c0;
+	color: #211668;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 30px;
+	text-decoration: none;
+}
+.result-box:hover {
+	background-color: #b96245;
+	cursor: pointer;
+	color: #e9f107;
+}
+.result-box a {
+	text-decoration: none;
+	color: white;
+}
